@@ -1,7 +1,9 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 5000
+const express = require(“express”)
+const PORT = process.env.PORT
+const app = express()
 
 app.get("/", (req, res) => {
-   res.send({ hello: "world" });
+   res.send({ hello: "fizzy Water" });
 });
+
+app.listen(PORT)
